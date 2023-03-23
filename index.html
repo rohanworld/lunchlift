@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" media="screen and (max-width: 1050px)" href="phonestyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <title>Rohan's Food Delivery Servies | MyOnlineEats.com </title>
+    <script>
+        function myFunction() {
+            alert("Thank You for ordering.. You will recieve your Order shortly..");
+        }
+        function yourFunction() {
+            alert("Thank You for interest.Our Representative will get in touch with you shortly");
+        }
+    </script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="images/logo.png" alt="El Professor logo">
+        </div>
+        <ul>
+            <li>
+                <class="item"><a href="#home">Home</a>
+            </li>
+            <li>
+                <class="item"><a href="#servicescontainer">Services</a>
+            </li>
+            <li>
+                <class="item"><a href="#clientsection">Our Clients</a>
+            </li>
+            <li>
+                <class="item"><a href="#contact">Contact Us</a>
+            </li>
+        </ul>
+
+    </nav>
+</body>
+<section id="home">
+    <h1 class="hprimary">Welcome to LunchLift</h1>
+    <p>Have you ever tried to Eat Healthy and Delicious food..?? </p>
+    <p>Here you go.. </p>
+    <button id="btn" onclick="myFunction()">Order Now</button>
+</section>
+<hr>
+<section id="servicescontainer">
+    <br> <br>
+    <h1 class="hprimary center">Our Services</h1>
+    <div id="services">
+        <div class="box">
+            <img src="images/partners/services.png" alt="Pizza">
+            <h2 class="hsecondary center">Food Ordering</h2>
+            <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus provident, neque
+                dolores quidem dicta quae fugit laboriosam hic. Quaerat dolorem, rem, sequi deleniti.</p>
+        </div>
+        <div class="box">
+            <img src="images/partners/foodcatering.png" alt="Pizza">
+            <h2 class="hsecondary center">Food Catering</h2>
+            <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus provident, neque
+                dolores quidem dicta quae fugit laboriosam hic. Quaerat dolorem, rem, sequi deleniti.</p>
+        </div>
+        <div class="box">
+            <img src="images/partners/bulkorder.jpg" alt="Pizza">
+            <h2 class="hsecondary center">Bulk Ordering</h2>
+            <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus provident, neque
+                dolores quidem dicta quae fugit laboriosam hic. Quaerat dolorem, rem, sequi deleniti.</p>
+        </div>
+    </div>
+</section>
+<hr>
+<section id="clientsection">
+    <h1 class="hprimary center">Our Clients</h1>
+    <div id="clients">
+        <div class="clientitem">
+            <img src="images/partners/5.png" alt="facebook">
+        </div>
+        <div class="clientitem">
+            <img src="images/partners/2.png" alt="facebook">
+        </div>
+        <div class="clientitem">
+            <img src="images/partners/3.png" alt="facebook">
+        </div>
+        <div class="clientitem">
+            <img src="images/partners/4.png" alt="facebook">
+        </div>
+        <div class="clientitem">
+            <img src="images/partners/1.png" alt="facebook">
+        </div>
+    </div>
+</section>
+<hr>
+<section id="contact">
+    <section class="hprimary center">Contact Us</section>
+    <div id="contactbox">
+        <form action="">
+            <div class="fromgroup">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            </div>
+            <div class="fromgroup">
+                <label for="email">Email: </label>
+                <input type="email" name="name" id="email" placeholder="Enter Your Email">
+            </div>
+            <div class="fromgroup">
+                <label for="Phone">Phone Number: </label>
+                <input type="text" name="name" id="Phone" placeholder="Enter Your Phone Number">
+            </div>
+            <div class="fromgroup">
+                <label for="message">Message: </label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message..."></textarea>
+            </div>
+            <div class="formgroup123"><button id="btn" onclick="yourFunction()">SUBMIT</button></div>
+        </form>
+    </div>
+</section>
+<footer>
+    <div class="center">
+        Copyright &copy; | 2021 <div class="linkbelow">www.MyOnlineEats.com.</div> All rights reserved
+    </div>
+</footer>
+
+</html>

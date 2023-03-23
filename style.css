@@ -1,0 +1,221 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS VARIABLES */
+:root{
+    --navbar-height: 59px;
+}
+/* NAVIGATION BAR */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+/* NAVBAR: LOGO and IMAGE */
+#logo{
+    margin: 4px 7px;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 20px;
+    cursor: pointer;
+}
+/* NAVBAR: LIST */
+#navbar ul{
+    font-family: 'PT Serif', serif;
+    display: flex;
+}
+
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 12px;
+    border-radius:20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+/* HOME SECTION */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 580px;
+    justify-content: center;
+    align-items: center;
+    /* font-weight: bolder; */
+}
+#home::before{
+    content: "";
+    background: url('images/iman2.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.90;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'PT Serif', serif;
+}
+/* SERVICE CONTAINER */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 10px;
+    border-radius: 23px;
+    background-color: #e7dddd;
+    margin-bottom: 10px;
+}
+#services .box img{
+    height: 180px;
+    display: block;
+    margin: auto;
+
+}
+#services .box p{
+    font-family: 'PT Serif', serif;
+}
+
+#services .box img{
+    cursor: pointer;
+}
+/* CONTACT SECTION */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('images/contact.jpg') no-repeat center center/cover;
+}
+#contactbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contactbox form{
+    width: 40%;
+}
+#contactbox label{
+    font-size: 1.1rem;
+    font-weight: bolder;
+    font-family: 'PT Serif', serif;
+}
+#contactbox input, #contactbox textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: 'PT Serif', serif;
+}
+.formgroup123{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+/* UTILITY CLASSES */
+.hprimary{
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family: 'PT Serif', serif;
+}
+.center{
+    text-align: center;
+    font-weight: bolder;    
+}
+.hsecondary{
+    font-weight: bolder;
+    font-size: 2.0rem;
+    font-family: 'PT Serif', serif;
+    padding: 12px;
+}
+#btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(103, 208, 216);
+    color: black;
+    margin: 17px;
+    font-size: 1rem;
+    font-family: 'PT Serif', serif;
+    border-radius: 30px;
+    cursor: pointer;
+}
+/* CLIENTS SECTION */
+#clientsection{
+    position: relative;
+    height: 344px;
+}
+#clientsection::before{
+    content: "";
+    position: absolute;
+    background: url('images/bg1.jpg');
+    width: 100%;
+    height: 75%;
+    z-index: -1;
+    opacity: 0.3;
+    margin-bottom: 1px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 108px;
+}
+.clientitem{
+    padding: 34px;
+}
+.linkbelow:hover{
+    cursor: pointer;
+}
